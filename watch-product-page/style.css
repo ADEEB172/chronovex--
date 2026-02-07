@@ -1,0 +1,252 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.top-heading{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  font-weight: 100;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.first{
+  display: flex;
+  /* margin: 15px; */
+}
+.first p {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.second{
+  display: flex;
+}
+
+.second p {
+  margin: 5px;
+  cursor: pointer;
+}
+
+
+.navbar-brand {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.navbar-nav {
+  font-size: 21px;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
+}
+.navbar-nav .nav-link {
+  padding: 0 !important;
+  margin: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  border-bottom: 1px solid #ffd700;
+  transition: 0.5s ease-in-out;
+  color: rgb(146, 139, 139);
+}
+
+.section-padding {
+  padding: 30px 0;
+  /* background-color: whitesmoke; */
+}
+
+.product img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
+.product img:hover {
+  border: 1px solid black;
+}
+.product-detail-contents {
+  padding-left: 46px;
+}
+.new {
+  padding: 5px 13px;
+  font-size: 9px;
+  background: black;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}
+
+.paging {
+  margin-top: 22px;
+}
+
+.product-detail-contents .watch-name {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.watch-price {
+  font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.watch-classification {
+  padding: 6px;
+  background-color: #ededed;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.buy-now {
+  padding: 5px 13px;
+  background-color: black;
+  color: white;
+  border: 0;
+  margin-bottom: 13px;
+  border-radius: 8px;
+}
+
+.different {
+  cursor: pointer;
+  margin-top: 30px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+
+.diff-color {
+  display: flex;
+}
+
+.different img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  /* padding: 7px; */
+}
+
+@media (max-width: 600px) {
+  .product-detail-contents {
+    padding: 0;
+  }
+
+  .new {
+    margin-top: 10px;
+  }
+
+  .paging {
+    font-size: 13px;
+    margin-top: 15px;
+  }
+  .watch-classification {
+    font-size: 11px;
+    padding: 4px;
+    font-size: 11px;
+  }
+
+  .different {
+    margin-top: 24px;
+  }
+}
+
+.heading{
+text-align: center;
+  font-size: 30px;
+  margin-bottom: 25px;
+   font-family: "Quintessential", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.specs {
+  /* text-align: center; */
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+
+
+.specification{
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 17px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.spec-img{
+  /* border: 1px solid black; */
+  text-align: center;
+}
+.spec-img img {
+  height: auto;
+  width: 75%;
+  object-fit: cover;
+}
+
+/* footer  */
+.footer{
+  width: 100%;
+  background: black;
+  color: lightgrey;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 50px;
+}
+
+.block{
+  /* border: 1px solid white; */
+  padding: 25px;
+}
+
+.foot-heading{
+  margin-bottom: 15px;
+}
+
+.block h6{
+  cursor: pointer;
+}
+.block h6:hover{
+  text-decoration: underline;
+}
+
+.icon{
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  #hide{
+    display: none;
+  }
+
+  #last-line{
+    display: none;
+  }
+
+}
+
+.last-line{
+  margin-top: 20px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  align-items: center;
+}

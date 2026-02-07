@@ -1,0 +1,433 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#arrow-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 0;
+  background: rgb(0, 0, 0);
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.top-heading {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  font-weight: 100;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.first {
+  display: flex;
+  /* margin: 15px; */
+}
+.first p {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 5px;
+  cursor: pointer;
+}
+.first p:hover{
+  border-bottom: 2px solid white;
+}
+.second {
+  display: flex;
+}
+
+.second p {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 5px;
+  cursor: pointer;
+}
+.second p:hover{
+  border-bottom: 2px solid white;
+}
+
+@media (max-width: 600px) {
+  .top-heading{
+    display: none;
+  }
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.navbar-brand {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.navbar-nav {
+  font-size: 21px;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.navbar-nav .nav-link {
+  padding: 0 !important;
+  margin: 15px;
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  border-bottom: 1px solid #ffd700;
+  transition: 0.5s ease-in-out;
+  color: rgb(146, 139, 139);
+}
+
+/* ---- TEXT OVERLAY ---- */
+.hero-text {
+  position: absolute;
+
+  left: 30%;
+  right: 30%;
+
+  bottom: 7%;
+  font-family: "BBH Sans Bogle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  z-index: 2;
+}
+
+.hero-text button {
+  border: 0;
+  outline: 0;
+  color: black;
+  background: white;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 9px 20px;
+  font-size: 18px;
+  font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* .container{
+  display: flex;
+} */
+.service-card:hover {
+  border: 1px solid black;
+}
+
+.service-card img {
+  padding: 10px;
+  /* object-fit: cover; */
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.service-card img:hover {
+  transform: scale(1.1);
+}
+
+.section-padding {
+  padding: 20px 0;
+}
+
+.section-title button {
+  font-size: 25px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@media (max-width: 600px) {
+  .section-title button {
+    font-size: 20px;
+  }
+}
+
+.section-title {
+  /* position: relative; */
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.watch-name,
+.watch-price {
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.watch-name {
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+@media (max-width: 600px) {
+  .watch-name {
+    font-size: 17px;
+  }
+}
+.watch-price {
+  font-size: 18px;
+}
+
+/* it removes sides gap of the container */
+/* .section-padding .container{
+ margin: 0;
+} */
+
+.filter-buttons .btn.active,
+.filter-buttons .btn:hover {
+  border: 0;
+  border-bottom: 1px solid black; /*#ffd700*/
+  transition: 0.5s ease-in-out;
+  color: #000000;
+}
+
+.image-box {
+  overflow: hidden;
+  display: none;
+}
+
+.filtered-btn button {
+  border: 0;
+  background: transparent;
+}
+
+.filtered-btn .button.active,
+.filtered-btn .button:hover {
+  border: 0;
+  border-bottom: 1px solid black; /*#ffd700*/
+  transition: 0.5s ease-in-out;
+  color: #000000;
+  background: transparent;
+}
+
+.collection {
+  overflow: hidden;
+  display: none;
+}
+
+.card-item img {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+.card-item {
+  position: relative;
+}
+
+.watch {
+  padding: 10px 40px;
+  position: absolute;
+  bottom: 7%;
+  left: 37%;
+  outline: 0;
+  border: 0;
+  border-radius: 10px;
+  font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 23px;
+  transition: 0.2s ease-in-out;
+}
+
+.watch:hover {
+  transform: scale(1.1);
+}
+
+.three-card {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  height: 100%;
+}
+
+.all-collection {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 45px;
+  font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* This is the new wrapper for your text and button */
+.card-content {
+  flex-grow: 1; /* This is the key! It makes this div grow to fill remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the content inside */
+  align-items: center; /* Horizontally centers the content inside */
+
+  padding: 1rem;
+}
+
+/* Style for the text itself */
+.below-video {
+  font-size: 45px;
+  font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+
+  color: rgb(0, 0, 0);
+  text-align: center;
+  /* You can remove the background from here since it's on the parent */
+}
+
+.three-card video {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+.three-card img {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+.three-card button {
+  position: absolute;
+  bottom: 6%;
+  left: 37%;
+  padding: 8px 20px;
+  font-size: 18px;
+  border: 0;
+  border-radius: 10px;
+  background: white;
+}
+
+.three-card button:hover {
+  background: grey;
+  /* border: 1px solid black; */
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  #third-card {
+    display: none;
+  }
+
+  .three-card {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-text {
+    display: none;
+  }
+}
+
+.luxury-collection {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 40px;
+  font-family: "Quintessential", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.luxury-service-card:hover {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.luxury-service-card img {
+  padding: 10px;
+  /* object-fit: cover; */
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.our-world {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 45px;
+  font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.footer{
+  width: 100%;
+  background: black;
+  color: lightgrey;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 50px;
+}
+
+.block{
+  /* border: 1px solid white; */
+  padding: 25px;
+}
+
+.foot-heading{
+  margin-bottom: 15px;
+}
+
+.block h6{
+  cursor: pointer;
+}
+.block h6:hover{
+  text-decoration: underline;
+}
+
+.icon{
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  #hide{
+    display: none;
+  }
+
+  #last-line{
+    display: none;
+  }
+
+}
+
+.last-line{
+  margin-top: 20px;
+  background-color: #000;
+  color: white;
+  text-align: center;
+  align-items: center;
+}
